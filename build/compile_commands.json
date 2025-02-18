@@ -1,0 +1,146 @@
+[
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\build_A_bar.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\build_A_bar.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\build_A_bar.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\build_A_bar.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\build_weights.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\build_weights.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\build_weights.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\build_weights.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\constraint_derivative.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\constraint_derivative.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\constraint_derivative.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\constraint_derivative.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\init_curve.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\init_curve.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\init_curve.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\init_curve.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\loss_derivative.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\loss_derivative.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\loss_derivative.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\loss_derivative.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\read_curve_file.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\read_curve_file.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\read_curve_file.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\read_curve_file.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\core.dir\\src\\repulsion_iteration.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\repulsion_iteration.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\src\\repulsion_iteration.cpp",
+  "output": "CMakeFiles\\core.dir\\src\\repulsion_iteration.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -isystem G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/eigen-src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\repulsive_curves.dir\\main.cpp.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\main.cpp",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\main.cpp",
+  "output": "CMakeFiles\\repulsive_curves.dir\\main.cpp.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\context.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\context.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\context.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\init.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\init.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\init.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\init.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\input.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\input.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\input.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\input.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\monitor.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\monitor.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\vulkan.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\vulkan.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\window.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\window.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\window.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\window.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_init.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_init.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_joystick.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_joystick.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_monitor.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_monitor.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_time.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_time.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_thread.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_thread.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_window.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\win32_window.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\wgl_context.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\wgl_context.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\egl_context.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\egl_context.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -D_GLFW_USE_CONFIG_H -D_UNICODE -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/include -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-src/src -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glfw-build/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 /clang:-Wall -Wno-missing-field-initializers -Wno-objc-multiple-method-names -o _deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\osmesa_context.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glfw-src\\src\\osmesa_context.c",
+  "output": "_deps\\glfw-build\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj"
+},
+{
+  "directory": "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -IG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-src/include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o _deps\\glad-build\\CMakeFiles\\glad.dir\\src\\glad.c.obj -c G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glad-src\\src\\glad.c",
+  "file": "G:\\0utoffiles\\coding_proj_cfg_envs_scripts\\repulsive_curves_implementation\\build\\_deps\\glad-src\\src\\glad.c",
+  "output": "_deps\\glad-build\\CMakeFiles\\glad.dir\\src\\glad.c.obj"
+}
+]
