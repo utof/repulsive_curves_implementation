@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake Configure",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-G",
+        "Ninja",
+        "-DCMAKE_C_COMPILER=clang",
+        "-DCMAKE_CXX_COMPILER=clang++",
+        ".."
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "CMake Build",
+      "type": "shell",
+      "command": "ninja",
+      "args": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": "CMake Configure"
+    }
+  ]
+}

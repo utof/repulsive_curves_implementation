@@ -1,0 +1,10 @@
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\EIGEN-SUBBUILD\CMAKEFILES\3BDA31C036CD421FD11E58B3D7F75950\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/eigen-subbuild -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/eigen-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/eigen-subbuild/eigen-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

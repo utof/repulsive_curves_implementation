@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\eigen-subbuild\CMakeFiles\3bda31c036cd421fd11e58b3d7f75950\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F2B4EC47-4616-3884-9BCC-CB0173D3E40E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

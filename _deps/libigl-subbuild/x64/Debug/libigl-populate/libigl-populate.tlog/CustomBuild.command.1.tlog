@@ -1,0 +1,150 @@
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/tmp/libigl-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-DOWNLOAD.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/tmp/libigl-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-UPDATE.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/tmp/libigl-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-CONFIGURE.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-BUILD.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-INSTALL.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\D5387BE6190A0F110ABFF4783C3673C4\LIBIGL-POPULATE-TEST.RULE
+setlocal
+cd G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\118E125E06105CF3FE1C7C445CDBBDD7\LIBIGL-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/CMakeFiles/Debug/libigl-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/libigl-populate-prefix/src/libigl-populate-stamp/Debug/libigl-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKEFILES\7451B3DB6A61700756BE2009D9744971\LIBIGL-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\LIBIGL-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild --check-stamp-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

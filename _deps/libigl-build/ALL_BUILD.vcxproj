@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D2B5F64-1351-38E5-9D69-883B6CF2F156}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation --check-stamp-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_library.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_test.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_tutorial.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_copy_dll.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_include.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_install.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_target_sources.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_windows.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\core.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\glfw.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\opengl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\libigl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\eigen.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glad.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glfw.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation --check-stamp-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_library.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_test.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_tutorial.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_copy_dll.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_include.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_install.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_target_sources.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_windows.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\core.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\glfw.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\opengl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\libigl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\eigen.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glad.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glfw.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation --check-stamp-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_library.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_test.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_tutorial.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_copy_dll.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_include.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_install.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_target_sources.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_windows.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\core.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\glfw.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\opengl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\libigl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\eigen.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glad.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glfw.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation --check-stamp-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_library.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_test.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_add_tutorial.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_copy_dll.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_include.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_install.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_target_sources.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\igl_windows.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\core.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\glfw.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\igl\modules\opengl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\libigl.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\eigen.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glad.cmake;G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-src\cmake\recipes\external\glfw.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\ZERO_CHECK.vcxproj">
+      <Project>{BA08F0FD-3037-314C-A47C-B728F04B09C2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\glad-build\glad.vcxproj">
+      <Project>{5DA59579-0EAD-3C24-A7EA-00F8C1B5C106}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{3A7E7A2C-FD74-38E4-A762-F326EC712CA1}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\igl_core.vcxproj">
+      <Project>{19409ED2-0C12-3582-9B4D-FBB1159B79C9}</Project>
+      <Name>igl_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\igl_glfw.vcxproj">
+      <Project>{3D52961A-5A62-39C1-8966-8D534F9840D9}</Project>
+      <Name>igl_glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\_deps\libigl-build\igl_opengl.vcxproj">
+      <Project>{FDE25ED4-D889-3C7F-A634-259E2859CC92}</Project>
+      <Name>igl_opengl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

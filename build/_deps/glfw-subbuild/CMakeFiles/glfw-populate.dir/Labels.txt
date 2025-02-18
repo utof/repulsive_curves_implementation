@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test.rule
+G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update.rule

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/glad-populate"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/glad-populate.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/glad-populate-complete.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-build.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-configure.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-download.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-install.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-mkdir.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-patch.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-test.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding- proj, cfg, envs, scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/glad-populate-prefix/src/glad-populate-stamp/glad-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glad-populate"
+		],
+		"name" : "glad-populate"
+	}
+}

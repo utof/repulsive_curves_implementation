@@ -1,0 +1,10 @@
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\_DEPS\GLAD-SUBBUILD\CMAKEFILES\469EF01298906AD8592073E04B83A777\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/glad-subbuild -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/glad-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/glad-subbuild/glad-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

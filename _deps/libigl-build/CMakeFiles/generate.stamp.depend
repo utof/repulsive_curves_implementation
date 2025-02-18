@@ -1,0 +1,30 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/ExternalProject/shared_internal_commands.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FetchContent/CMakeLists.cmake.in
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/CMakeLists.txt
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_add_library.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_add_test.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_add_tutorial.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_copy_dll.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_include.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_install.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_target_sources.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/igl_windows.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/modules/core.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/modules/glfw.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/igl/modules/opengl.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/libigl.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/recipes/external/eigen.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/recipes/external/glad.cmake
+G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/_deps/libigl-src/cmake/recipes/external/glfw.cmake
