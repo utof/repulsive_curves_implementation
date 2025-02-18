@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 
     // copy the file path of the curve you want to use the program on
     // since I wrote a custom function to parse the file, IT ONLY ACCEPTS OBJ FILES!!!!!!!!
-    std::string curve_file_path = "data/x_y_z_axis.obj";
+    std::string curve_file_path = argv[1];
 
     // -------------
 
@@ -80,8 +80,7 @@ int main(int argc, char* argv[])
 
 
     // Load mesh which shows x,y,z axis
-    igl::read_triangle_mesh(
-        ("C:/Users/Nathan Henry/Desktop/Geometry_processing/nathan-henry-repulsive-curves/data/x_y_z_axis.obj"), OVX, FX);
+    igl::read_triangle_mesh(curve_file_path, OVX, FX);
 
     // I made a cpp file to read OBJ files which contain curves (i.e. no faces)
     read_curve_file(argc > 1 ? argv[1] : curve_file_path, OV, E);
