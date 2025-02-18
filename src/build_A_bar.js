@@ -1,5 +1,5 @@
 // src/build_A_bar.js
-import { Matrix, zeros, pow } from "mathjs"; // You might need to install mathjs: npm install mathjs
+import { Matrix, zeros, pow } from "mathjs";
 
 // Build the Sobolev inner product matrix A_bar
 //
@@ -25,83 +25,105 @@ function build_A_bar(pt_num, E, Ac, T, L, W, W0) {
   let B = zeros(pt_num, pt_num);
   let B0 = zeros(pt_num, pt_num);
 
+  // Helper function to safely get length value
+  const getLength = (idx) => (Array.isArray(L) ? L[idx] : L.get([idx, 0]));
+
+  // Helper function to safely get weight value
+  const getWeight = (w, i, j) => (Array.isArray(w) ? w[i][j] : w.get([i, j]));
+
+  // Helper function to safely get tangent vector
+  const getTangent = (idx) => {
+    if (Array.isArray(T.get([idx]))) {
+      return T.get([idx]);
+    }
+    return [T.get([idx, 0]), T.get([idx, 1]), T.get([idx, 2])];
+  };
+
+  // Helper function to safely get edge index
+  const getEdgeIndex = (i, j) => E.get([i, j]);
+
   for (let I = 0; I < Ac.length; I++) {
     for (let J_ind = 0; J_ind < Ac[I].length; J_ind++) {
       let J = Ac[I][J_ind];
 
       for (let a = 0; a < 2; a++) {
         for (let b = 0; b < 2; b++) {
+          const Ia = getEdgeIndex(I, a);
+          const Ib = getEdgeIndex(I, b);
+          const Ja = getEdgeIndex(J, a);
+          const Jb = getEdgeIndex(J, b);
+
+          // B matrix updates
+          const weightIJ = getWeight(W, I, J);
+          const lengthI = getLength(I);
+          const lengthJ = getLength(J);
+
+          // Update B diagonal blocks
           B.set(
-            [E.get([I, a]), E.get([I, b])],
-            B.get([E.get([I, a]), E.get([I, b])]) +
-              (pow(-1, a + b) * W.get([I, J])) / pow(L.get([I]), 2)
+            [Ia, Ib],
+            B.get([Ia, Ib]) + (pow(-1, a + b) * weightIJ) / pow(lengthI, 2)
           );
           B.set(
-            [E.get([J, a]), E.get([J, b])],
-            B.get([E.get([J, a]), E.get([J, b])]) +
-              (pow(-1, a + b) * W.get([I, J])) / pow(L.get([J]), 2)
+            [Ja, Jb],
+            B.get([Ja, Jb]) + (pow(-1, a + b) * weightIJ) / pow(lengthJ, 2)
           );
 
+          // Get tangent vectors
+          const tangentI = getTangent(I);
+          const tangentJ = getTangent(J);
+
+          // Update B off-diagonal blocks
+          const dotProdTangents = dotProduct(tangentI, tangentJ);
           B.set(
-            [E.get([I, a]), E.get([J, b])],
-            B.get([E.get([I, a]), E.get([J, b])]) -
-              (pow(-1, a + b) *
-                W.get([I, J]) *
-                dotProduct(T.row(I), T.row(J))) /
-                (L.get([I]) * L.get([J]))
+            [Ia, Jb],
+            B.get([Ia, Jb]) -
+              (pow(-1, a + b) * weightIJ * dotProdTangents) /
+                (lengthI * lengthJ)
           );
           B.set(
-            [E.get([J, a]), E.get([I, b])],
-            B.get([E.get([J, a]), E.get([I, b])]) -
-              (pow(-1, a + b) *
-                W.get([I, J]) *
-                dotProduct(T.row(J), T.row(I))) /
-                (L.get([J]) * L.get([I]))
+            [Ja, Ib],
+            B.get([Ja, Ib]) -
+              (pow(-1, a + b) * weightIJ * dotProdTangents) /
+                (lengthJ * lengthI)
           );
 
-          B0.set(
-            [E.get([I, a]), E.get([I, b])],
-            B0.get([E.get([I, a]), E.get([I, b])]) + 0.25 * W0.get([I, J])
-          );
-          B0.set(
-            [E.get([J, a]), E.get([J, b])],
-            B0.get([E.get([J, a]), E.get([J, b])]) + 0.25 * W0.get([I, J])
-          );
+          // B0 matrix updates
+          const weight0IJ = getWeight(W0, I, J);
 
-          B0.set(
-            [E.get([I, a]), E.get([J, b])],
-            B0.get([E.get([I, a]), E.get([J, b])]) - 0.25 * W0.get([I, J])
-          );
-          B0.set(
-            [E.get([J, a]), E.get([I, b])],
-            B0.get([E.get([J, a]), E.get([I, b])]) - 0.25 * W0.get([I, J])
-          );
+          // Update B0 diagonal blocks
+          B0.set([Ia, Ib], B0.get([Ia, Ib]) + 0.25 * weight0IJ);
+          B0.set([Ja, Jb], B0.get([Ja, Jb]) + 0.25 * weight0IJ);
+
+          // Update B0 off-diagonal blocks
+          B0.set([Ia, Jb], B0.get([Ia, Jb]) - 0.25 * weight0IJ);
+          B0.set([Ja, Ib], B0.get([Ja, Ib]) - 0.25 * weight0IJ);
         }
       }
     }
   }
 
   let A = Matrix.add(B, B0);
-
   let A_bar = zeros(A.size()[0] * 3, A.size()[1] * 3);
 
-  for (let i = 0; i < A.size()[0]; i++) {
-    for (let j = 0; j < A.size()[1]; j++) {
-      A_bar.set([i, j], A.get([i, j]));
-      A_bar.set([i + A.size()[0], j + A.size()[1]], A.get([i, j]));
-      A_bar.set([i + 2 * A.size()[0], j + 2 * A.size()[1]], A.get([i, j]));
+  // Build block diagonal matrix A_bar
+  const n = A.size()[0];
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      const val = A.get([i, j]);
+      // Copy the value to each diagonal block
+      A_bar.set([i, j], val);
+      A_bar.set([i + n, j + n], val);
+      A_bar.set([i + 2 * n, j + 2 * n], val);
     }
   }
 
   return A_bar;
 }
 
-function dotProduct(row1, row2) {
-  let result = 0;
-  for (let i = 0; i < row1.length; i++) {
-    result += row1[i] * row2[i];
-  }
-  return result;
+function dotProduct(v1, v2) {
+  if (!Array.isArray(v1)) v1 = v1.toArray();
+  if (!Array.isArray(v2)) v2 = v2.toArray();
+  return v1.reduce((sum, x, i) => sum + x * v2[i], 0);
 }
 
 export { build_A_bar };

@@ -1,3 +1,5 @@
+import { zeros, matrix } from "mathjs";
+
 // Compute two vector of vectors (Ac and E_adj) which only depend
 // on the curve's topology and thus won't have to be recomputed
 // for each iteration of descent.
@@ -17,86 +19,101 @@
 //     the edge indices for all edges containing the point "p"
 //   lengths  #E by 1 list of the length of each edge in the curve before any iterations were done
 function init_curve(E, V) {
-  const pt_num = V.rows;
-  const edge_num = E.rows;
+  // Input validation
+  if (!E || !V) {
+    throw new Error("E and V must be defined");
+  }
 
-  // Later, in each iteration of repulsion we will have to construct a weight matrix w_{I,J}
-  // To do this we will need to iterate through all pairs of edges which are disjoint
+  // Get dimensions
+  const pt_num = V.size()[0];
+  const edge_num = E.size()[0];
 
-  // In order to save time later, we will just store all edges J which are disjoint from
-  // an edge I in a vector Ac[I]
-  // So Ac is a vector of vectors of the form Ac[I]
+  // Helper function to safely get vertex coordinates
+  const getVertexCoords = (idx) => {
+    try {
+      return [V.get([idx, 0]), V.get([idx, 1]), V.get([idx, 2])];
+    } catch (error) {
+      console.error(`Error accessing vertex ${idx}:`, error);
+      throw new Error(`Invalid vertex access at index ${idx}`);
+    }
+  };
 
-  // Ac stands for "adjacency complement" because it's all the edges not adjacent to other edges
-  // This will only depend on the topology of the mesh
-  // So we won't need to recompute it
+  // Helper function to safely get edge vertices
+  const getEdgeVertices = (idx) => {
+    try {
+      return [E.get([idx, 0]), E.get([idx, 1])];
+    } catch (error) {
+      console.error(`Error accessing edge ${idx}:`, error);
+      throw new Error(`Invalid edge access at index ${idx}`);
+    }
+  };
 
-  // We use arrays for this since different elements will have different lengths
+  // Build Ac (adjacency complement)
   let Ac = [];
-
-  // build Ac
   for (let i = 0; i < edge_num; i++) {
     let row = [];
+    const [i1, i2] = getEdgeVertices(i);
+
     for (let j = 0; j < edge_num; j++) {
-      // if edge i and j don't share any vertices, add edge j to the row for edge i
-      if (
-        !(
-          E.get([i, 0]) === E.get([j, 0]) ||
-          E.get([i, 0]) === E.get([j, 1]) ||
-          E.get([i, 1]) === E.get([j, 0]) ||
-          E.get([i, 1]) === E.get([j, 1])
-        )
-      ) {
-        row.push(j);
+      if (i !== j) {
+        // Don't compare edge with itself
+        const [j1, j2] = getEdgeVertices(j);
+        // Check if edges share no vertices
+        if (i1 !== j1 && i1 !== j2 && i2 !== j1 && i2 !== j2) {
+          row.push(j);
+        }
       }
     }
     Ac.push(row);
   }
 
-  // Note that some of the rows of Ac will be empty, and this is fine
-
-  // Define a vector of vectors called E_Adj
-  // One row for each vertex
-  // row i contains an element for each edge containing vertex i
-
-  // Similar to "Ac", we only need to build this once since it only depends on the topology
-  // of the curve, and it will save us time during each iteration when we need to find the
-  // set of edges adjacent to a point.
-
-  let E_adj = [];
-
-  // iterate through all points
-  for (let i = 0; i < pt_num; i++) {
-    let row = [];
-    // iterate through all edges
-    for (let j = 0; j < edge_num; j++) {
-      // if edge j contains vertex i, add edge j to the row for vertex i
-      if (E.get([j, 0]) === i || E.get([j, 1]) === i) {
-        row.push(j);
-      }
-    }
-    E_adj.push(row);
+  // Build E_adj (edge adjacency)
+  let E_adj = Array(pt_num)
+    .fill()
+    .map(() => []);
+  for (let i = 0; i < edge_num; i++) {
+    const [v1, v2] = getEdgeVertices(i);
+    E_adj[v1].push(i);
+    E_adj[v2].push(i);
   }
 
-  // We will get all the edge lengths now
-  // This is important because during each iteration we will want to compare
-  // new edge lengths to the edge lengths of the mesh when it was initialized
-
+  // Compute edge lengths
   let lengths = new Array(edge_num);
   for (let i = 0; i < edge_num; i++) {
-    let diff = subtractVectors(V.row(E.get([i, 0])), V.row(E.get([i, 1])));
-    lengths[i] = vectorNorm(diff);
+    const [v1, v2] = getEdgeVertices(i);
+    const p1 = getVertexCoords(v1);
+    const p2 = getVertexCoords(v2);
+    lengths[i] = vectorNorm(subtractVectors(p1, p2));
   }
 
-  return { Ac, E_adj, lengths };
+  // Validation
+  if (
+    !Ac.every((row) => Array.isArray(row)) ||
+    !E_adj.every((row) => Array.isArray(row)) ||
+    !lengths.every((l) => typeof l === "number" && !isNaN(l))
+  ) {
+    throw new Error("Invalid data structures generated");
+  }
+
+  return {
+    Ac,
+    E_adj,
+    lengths: matrix([lengths]).reshape([edge_num, 1]), // Make sure lengths is a column vector
+  };
 }
 
 // Helper functions for vector operations
 function subtractVectors(v1, v2) {
+  if (!Array.isArray(v1) || !Array.isArray(v2) || v1.length !== v2.length) {
+    throw new Error("Invalid vectors for subtraction");
+  }
   return v1.map((x, i) => x - v2[i]);
 }
 
 function vectorNorm(v) {
+  if (!Array.isArray(v)) {
+    throw new Error("Vector must be an array");
+  }
   return Math.sqrt(v.reduce((sum, x) => sum + x * x, 0));
 }
 

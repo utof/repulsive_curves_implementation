@@ -2,9 +2,7 @@ import { zeros } from "mathjs";
 
 // Compute the derivative of each constraint with respect to vert positions.
 // The constraints used are the total length constraint and the
-// individual edge length constraint. The formulas for these constraints are on
-// page 13 of the paper, but I computed the derivative formulas by hand and then
-// confirmed the result with Mathematica).
+// individual edge length constraint.
 //
 // Inputs:
 //   E  #E by 2 list of edge indices for the curve
@@ -13,16 +11,23 @@ import { zeros } from "mathjs";
 //   E_adj  a vector of vectors where there is a vector for each point "p" consisting of
 //     the edge indices for all edges containing the point "p"
 //   constr_edges  list of the indices of the edges you want to constrain the lengths of.
-//     Note that this is different from constraining the total length of all edges. In the
-//     code, it is automatically set so that the edges which are in this list are the ones
-//     connected to a verticy of index 3 or more.
 // Outputs:
-//   C  (1 + #constr_edges) by 3 * #V list of the derivative of two constraints: the total length
-//     constraint, and the individual edge length constraints. The first row is the derivative
-//     of the total length constraint, and each following row corresponds to the derivative of
-//     the fixed edge length constraint for a different edge in "constr_edges"
+//   C  (1 + #constr_edges) by 3 * #V list of constraints derivatives
 function constraint_derivative(E, V, L, E_adj, constr_edges) {
-  const pt_num = V.rows;
+  const pt_num = V.size()[0]; // Changed from V.rows
+
+  // Helper functions for safe matrix access
+  const getVertex = (idx) => {
+    if (Array.isArray(V.get([idx]))) {
+      return V.get([idx]);
+    }
+    return [V.get([idx, 0]), V.get([idx, 1]), V.get([idx, 2])];
+  };
+
+  const getLength = (idx) => (Array.isArray(L) ? L[idx] : L.get([idx, 0]));
+  const getEdgeIndex = (i, j) => E.get([i, j]);
+  const getConstrEdge = (i) =>
+    Array.isArray(constr_edges) ? constr_edges[i] : constr_edges.get([i, 0]);
 
   // First we will find the derivative of the "total length constraint"
   // Phi_l = l0 - Sum over all edges I of {L(I)}
@@ -32,20 +37,21 @@ function constraint_derivative(E, V, L, E_adj, constr_edges) {
   for (let p = 0; p < pt_num; p++) {
     let deriv_p = [0, 0, 0]; // will store the derivative wrt phi_p
 
-    // an edge will contribute to the derivative with respect to phi_p
-    // if the edge is adjacent to p
-
     // loop through all edges adjacent to p
     for (let I_ind = 0; I_ind < E_adj[p].length; I_ind++) {
       let I = E_adj[p][I_ind];
+      let length_I = getLength(I);
 
-      // add or subtract from deriv_p based on the derivative formula
-      if (E.get([I, 0]) === p) {
-        let diff = subtractVectors(V.row(E.get([I, 0])), V.row(E.get([I, 1])));
-        deriv_p = subtractVectors(deriv_p, scaleVector(diff, 1 / L.get([I])));
-      } else if (E.get([I, 1]) === p) {
-        let diff = subtractVectors(V.row(E.get([I, 1])), V.row(E.get([I, 0])));
-        deriv_p = subtractVectors(deriv_p, scaleVector(diff, 1 / L.get([I])));
+      if (getEdgeIndex(I, 0) === p) {
+        const v1 = getVertex(getEdgeIndex(I, 0));
+        const v2 = getVertex(getEdgeIndex(I, 1));
+        let diff = subtractVectors(v1, v2);
+        deriv_p = subtractVectors(deriv_p, scaleVector(diff, 1 / length_I));
+      } else if (getEdgeIndex(I, 1) === p) {
+        const v1 = getVertex(getEdgeIndex(I, 1));
+        const v2 = getVertex(getEdgeIndex(I, 0));
+        let diff = subtractVectors(v1, v2);
+        deriv_p = subtractVectors(deriv_p, scaleVector(diff, 1 / length_I));
       }
     }
 
@@ -55,42 +61,45 @@ function constraint_derivative(E, V, L, E_adj, constr_edges) {
     C_l.set([0, 3 * p + 2], deriv_p[2]);
   }
 
-  // We do the same thing as above but now for constraining
-  // the length of a specific set of edges "constr_edges"
-  let C_e = zeros(constr_edges.length, 3 * pt_num);
+  // Handle edge length constraints
+  const numConstrEdges = Array.isArray(constr_edges)
+    ? constr_edges.length
+    : constr_edges.size()[0];
+  let C_e = zeros(numConstrEdges, 3 * pt_num);
 
-  for (let i = 0; i < C_e.size()[0]; i++) {
-    let I = constr_edges.get([i]);
+  for (let i = 0; i < numConstrEdges; i++) {
+    let I = getConstrEdge(i);
+    let i1 = getEdgeIndex(I, 0);
+    let i2 = getEdgeIndex(I, 1);
 
-    let i1 = E.get([I, 0]);
-    let i2 = E.get([I, 1]);
+    const v1 = getVertex(i1);
+    const v2 = getVertex(i2);
+    let diff = subtractVectors(v1, v2);
+    let length_I = getLength(I);
 
-    let diff = subtractVectors(V.row(i1), V.row(i2));
+    // Set the derivatives for the first vertex
+    C_e.set([i, i1 * 3], -diff[0] / length_I);
+    C_e.set([i, i1 * 3 + 1], -diff[1] / length_I);
+    C_e.set([i, i1 * 3 + 2], -diff[2] / length_I);
 
-    // the formula for the derivative was computed by hand
-    // the following code implements it
-    C_e.set([i, i1 * 3], -diff[0] / L.get([I]));
-    C_e.set([i, i1 * 3 + 1], -diff[1] / L.get([I]));
-    C_e.set([i, i1 * 3 + 2], -diff[2] / L.get([I]));
-
-    C_e.set([i, i2 * 3], diff[0] / L.get([I]));
-    C_e.set([i, i2 * 3 + 1], diff[1] / L.get([I]));
-    C_e.set([i, i2 * 3 + 2], diff[2] / L.get([I]));
+    // Set the derivatives for the second vertex
+    C_e.set([i, i2 * 3], diff[0] / length_I);
+    C_e.set([i, i2 * 3 + 1], diff[1] / length_I);
+    C_e.set([i, i2 * 3 + 2], diff[2] / length_I);
   }
 
-  // put each constraint in a row of C (the overall constraint derivative matrix which we are returning)
+  // Combine C_l and C_e into the final constraint matrix
   let C = zeros(C_l.size()[0] + C_e.size()[0], pt_num * 3);
 
-  // Copy C_l and C_e into C
-  for (let i = 0; i < C_l.size()[0]; i++) {
-    for (let j = 0; j < C_l.size()[1]; j++) {
-      C.set([i, j], C_l.get([i, j]));
-    }
+  // Copy total length constraint
+  for (let j = 0; j < C_l.size()[1]; j++) {
+    C.set([0, j], C_l.get([0, j]));
   }
 
+  // Copy edge length constraints
   for (let i = 0; i < C_e.size()[0]; i++) {
     for (let j = 0; j < C_e.size()[1]; j++) {
-      C.set([i + C_l.size()[0], j], C_e.get([i, j]));
+      C.set([i + 1, j], C_e.get([i, j]));
     }
   }
 
