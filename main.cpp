@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 
     // copy the file path of the curve you want to use the program on
     // since I wrote a custom function to parse the file, IT ONLY ACCEPTS OBJ FILES!!!!!!!!
-    std::string curve_file_path = "C:/Users/Nathan Henry/Desktop/Geometry_processing/nathan-henry-repulsive-curves/data/petersen.obj";
+    std::string curve_file_path = "data/x_y_z_axis.obj";
 
     // -------------
 
