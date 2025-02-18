@@ -57,10 +57,28 @@ function loss_derivative(alpha, beta, E, Ac, E_adj, V, T, L) {
 
   const getTangent = (idx) => {
     try {
-      return [T.get([idx, 0]), T.get([idx, 1]), T.get([idx, 2])];
+      console.log(
+        "Getting tangent for edge",
+        idx,
+        "from matrix of size",
+        T.size()
+      );
+      const tangent = [
+        parseFloat(T.get([idx, 0])),
+        parseFloat(T.get([idx, 1])),
+        parseFloat(T.get([idx, 2])),
+      ];
+      console.log("Tangent vector found:", tangent);
+      return tangent;
     } catch (error) {
-      console.error("Error getting tangent", idx, error);
-      throw error;
+      console.error(
+        "Error getting tangent at",
+        idx,
+        "Matrix size:",
+        T.size(),
+        error
+      );
+      throw error; // Re-throw after logging
     }
   };
 
@@ -73,9 +91,8 @@ function loss_derivative(alpha, beta, E, Ac, E_adj, V, T, L) {
     }
   };
 
-  // Create derivative matrix with proper dimensions
-  const derivArray = zeros([1, 3 * pt_num])._data;
-  let Deriv = matrix(derivArray);
+  // Create derivative matrix with proper dimensions, ensuring it's a 2D matrix
+  let Deriv = zeros(1, 3 * pt_num);
   console.log("Created Deriv matrix with size:", Deriv.size());
 
   // First loop through all the points we will be differentiating with respect to
@@ -250,7 +267,7 @@ function loss_derivative(alpha, beta, E, Ac, E_adj, V, T, L) {
       }
     }
 
-    // Put values in the derivative vector
+    // Put values in the derivative vector, ensuring Deriv is treated as a matrix
     console.log(`Setting derivative values for point ${p}:`, deriv_p);
     try {
       Deriv.set([0, 3 * p], deriv_p[0]);
@@ -263,6 +280,10 @@ function loss_derivative(alpha, beta, E, Ac, E_adj, V, T, L) {
   }
 
   console.log("Completed loss_derivative, Deriv size:", Deriv.size());
+
+  // Log the dimensions of the derivative before returning
+  console.log("loss_derivative.js: Final derivative dimensions:", Deriv.size());
+
   return Deriv;
 }
 

@@ -18,10 +18,13 @@ function constraint_derivative(E, V, L, E_adj, constr_edges) {
 
   // Helper functions for safe matrix access
   const getVertex = (idx) => {
-    if (Array.isArray(V.get([idx]))) {
-      return V.get([idx]);
+    if (V.size().length === 2) {
+      // V is a 2D matrix
+      return [V.get([idx, 0]), V.get([idx, 1]), V.get([idx, 2])];
+    } else {
+      // V is a 1D array
+      return [V.get([3 * idx]), V.get([3 * idx + 1]), V.get([3 * idx + 2])];
     }
-    return [V.get([idx, 0]), V.get([idx, 1]), V.get([idx, 2])];
   };
 
   const getLength = (idx) => (Array.isArray(L) ? L[idx] : L.get([idx, 0]));

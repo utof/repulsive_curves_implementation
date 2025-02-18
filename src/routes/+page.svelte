@@ -4,13 +4,15 @@
   import { repulsion_iteration } from "../repulsion_iteration.js";
   import { read_curve_file } from "../read_curve_file.js";
   import FileUploader from "$lib/components/FileUploader.svelte";
-  import { Matrix } from "mathjs";
+  import { V, E, Ac, E_adj, lengths } from "$lib/stores.js"; // Import stores
 
   // Canvas setup
   let canvas;
   let ctx;
   let animationId;
   let isAnimating = false;
+  let showSamples = true;
+  let OV; // To store the original vertices for reset
 
   // Parameters from the original main.cpp
   const alpha = 3; // changes the nature of the tangent-point energy
@@ -20,22 +22,13 @@
   const max_iters = 20; // max iterations for projection
   const threshold = 0.001; // constraint threshold
 
-  // Curve data
-  let V; // vertex positions
-  let E; // edge indices
-  let Ac; // adjacency complement
-  let E_adj; // edge adjacency
-  let lengths; // initial edge lengths
-  let OV; // original vertex positions
-  let showSamples = true;
-
   // Colors
   const orange = { r: 255, g: 179, b: 51 }; // RGB equivalent of (1.0, 0.7, 0.2)
 
   onMount(async () => {
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
-    
+
     // Set canvas size
     const resizeCanvas = () => {
       canvas.width = window.innerWidth * 0.8;
@@ -61,14 +54,19 @@ l 4 1`;
   function loadCurveData(content) {
     try {
       const { V: newV, E: newE } = read_curve_file(content);
-      OV = newV;
-      V = newV;
-      E = newE;
-      
-      // Initialize curve data
-      ({ Ac, E_adj, lengths } = init_curve(E, V));
-      
-      // Start render loop
+      // Store the initial vertices for resetting.  Make sure these are *arrays*,
+      // not mathjs matrices, so that we can use the spread operator (...) to
+      // copy them.
+      OV = newV.clone();
+      V.set(newV);
+      E.set(newE);
+
+      // Initialize curve data, which updates Ac, E_adj, and lengths stores
+      const result = init_curve($E, $V);
+      Ac.set(result.Ac);
+      E_adj.set(result.E_adj);
+      lengths.set(result.lengths);
+
       render();
     } catch (error) {
       console.error("Error loading curve data:", error);
@@ -82,15 +80,37 @@ l 4 1`;
   }
 
   function reset() {
-    V = Matrix.clone(OV);
-    Ac = [];
-    E_adj = [];
-    ({ Ac, E_adj, lengths } = init_curve(E, V));
-    render();
+    // Reset to the originally loaded vertices
+    if (OV) {
+      V.set(OV.clone()); // Use .clone() to avoid modifying the original
+      const result = init_curve($E, $V);
+      Ac.set(result.Ac);
+      E_adj.set(result.E_adj);
+      lengths.set(result.lengths);
+      render();
+    }
   }
 
   function step() {
-    V = repulsion_iteration(alpha, beta, a_const, b_const, threshold, max_iters, E, Ac, E_adj, lengths, V);
+    // Call repulsion_iteration with store values
+    V.update((v) => {
+			console.log("+page.svelte: V dimensions before update:", v.size());
+      const newV = repulsion_iteration(
+        alpha,
+        beta,
+        a_const,
+        b_const,
+        threshold,
+        max_iters,
+        $E,
+        $Ac,
+        $E_adj,
+        $lengths,
+        v
+      );
+			console.log("+page.svelte: V dimensions after update:", newV.size());
+			return newV;
+		});
     render();
   }
 
@@ -111,7 +131,9 @@ l 4 1`;
   }
 
   function render() {
-    if (!ctx || !V || !E) return;
+    if (!ctx || !$V || !$E) return;
+
+		console.log("+page.svelte: $V dimensions in render():", $V.size());
 
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -126,9 +148,10 @@ l 4 1`;
       ctx.strokeStyle = "white";
       ctx.lineWidth = 1;
       ctx.beginPath();
-      for (let i = 0; i < E.size()[0]; i++) {
-        const v1 = [V.get([E.get([i, 0]), 0]), V.get([E.get([i, 0]), 1])];
-        const v2 = [V.get([E.get([i, 1]), 0]), V.get([E.get([i, 1]), 1])];
+      for (let i = 0; i < $E.size()[0]; i++) {
+        const v1 = [$V.get([$E.get([i, 0]), 0]), $V.get([$E.get([i, 0]), 1])];
+        const v2 = [$V.get([$E.get([i, 1]), 0]), $V.get([$E.get([i, 1]), 1])];
+        // console.log('v1', v1, 'v2', v2);
         ctx.moveTo(centerX + v1[0] * scale, centerY + v1[1] * scale);
         ctx.lineTo(centerX + v2[0] * scale, centerY + v2[1] * scale);
       }
@@ -136,11 +159,11 @@ l 4 1`;
 
       // Draw vertices
       ctx.fillStyle = `rgb(${orange.r}, ${orange.g}, ${orange.b})`;
-      for (let i = 0; i < V.size()[0]; i++) {
+      for (let i = 0; i < $V.size()[0]; i++) {
         ctx.beginPath();
         ctx.arc(
-          centerX + V.get([i, 0]) * scale,
-          centerY + V.get([i, 1]) * scale,
+          centerX + $V.get([i, 0]) * scale,
+          centerY + $V.get([i, 1]) * scale,
           5,
           0,
           2 * Math.PI
@@ -170,7 +193,7 @@ l 4 1`;
   }
 </script>
 
-<svelte:window on:keydown={handleKeydown}/>
+<svelte:window on:keydown={handleKeydown} />
 
 <div class="container">
   <FileUploader on:fileLoaded={handleFileLoaded} />
@@ -181,7 +204,12 @@ l 4 1`;
     </button>
     <button on:click={step}>Step [H]</button>
     <button on:click={reset}>Reset [R]</button>
-    <button on:click={() => { showSamples = !showSamples; render(); }}>
+    <button
+      on:click={() => {
+        showSamples = !showSamples;
+        render();
+      }}
+    >
       Toggle Points/Edges [P]
     </button>
   </div>

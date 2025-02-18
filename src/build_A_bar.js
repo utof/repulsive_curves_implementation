@@ -1,5 +1,5 @@
 // src/build_A_bar.js
-import { zeros, pow, matrix, add } from "mathjs"; // Changed import to include add
+import { zeros, pow, matrix, add } from "mathjs";
 
 // Build the Sobolev inner product matrix A_bar
 //
@@ -84,7 +84,7 @@ function build_A_bar(pt_num, E, Ac, T, L, W, W0) {
         T.size(),
         error
       );
-      throw error;
+      throw error; // Re-throw after logging
     }
   };
 
@@ -152,7 +152,7 @@ function build_A_bar(pt_num, E, Ac, T, L, W, W0) {
               `Error in matrix update for I=${I}, J=${J}, a=${a}, b=${b}:`,
               error
             );
-            throw error;
+            throw error; // Re-throw after logging
           }
         }
       }
