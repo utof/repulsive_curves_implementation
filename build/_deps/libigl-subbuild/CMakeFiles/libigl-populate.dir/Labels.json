@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/libigl-populate"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/3f5ebe2e499875774e92a8a6afe661c1/libigl-populate.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/72ef4b805932e6048a03a8cc6110ade0/libigl-populate-complete.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-build.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-configure.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-download.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-install.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-mkdir.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-patch.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-test.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/libigl-subbuild/CMakeFiles/7f4d2ba8235987e299e0363ebdeb4705/libigl-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libigl-populate"
+		],
+		"name" : "libigl-populate"
+	}
+}

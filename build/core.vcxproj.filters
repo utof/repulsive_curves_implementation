@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\build_A_bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\build_weights.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\constraint_derivative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\init_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\loss_derivative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\read_curve_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\src\repulsion_iteration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\eigen-src\debug\msvc\eigen.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5040409D-F216-32C2-B9A8-850CCC342AD5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

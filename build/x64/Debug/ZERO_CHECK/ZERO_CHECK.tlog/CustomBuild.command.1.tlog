@@ -1,0 +1,10 @@
+^G:\0UTOFFILES\CODING_PROJ_CFG_ENVS_SCRIPTS\REPULSIVE_CURVES_IMPLEMENTATION\BUILD\CMAKEFILES\101BFA9B7CB316423AC2299D2C8EA73F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation -BG:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/repulsive_curves.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

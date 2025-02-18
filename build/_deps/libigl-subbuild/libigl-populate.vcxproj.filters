@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\7f4d2ba8235987e299e0363ebdeb4705\libigl-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\72ef4b805932e6048a03a8cc6110ade0\libigl-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\3f5ebe2e499875774e92a8a6afe661c1\libigl-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-subbuild\CMakeFiles\libigl-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{01FBD292-A0EA-3D14-B84F-4E34D26EB118}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-build\x64\Debug\igl_core</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-build\x64\Debug\igl_glfw</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-build\x64\Debug\igl_opengl</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\Viewer.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\ViewerPlugin.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\background_window.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\map_texture.h">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\Viewer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\background_window.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="G:\0utoffiles\coding_proj_cfg_envs_scripts\repulsive_curves_implementation\build\_deps\libigl-src\include\igl\opengl\glfw\map_texture.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CDF09CFE-D83F-31FD-8433-45136FDA8A0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5040409D-F216-32C2-B9A8-850CCC342AD5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/glad-populate"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/b807c40caaea4d4dba0e40a4bb7681bb/glad-populate.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/0c5076e68734bdcfc591b20668376b46/glad-populate-complete.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-build.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-configure.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-download.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-install.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-mkdir.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-patch.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-test.rule"
+		},
+		{
+			"file" : "G:/0utoffiles/coding_proj_cfg_envs_scripts/repulsive_curves_implementation/build/_deps/glad-subbuild/CMakeFiles/210c2e7d4647ee5ec59d338cc79bc681/glad-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glad-populate"
+		],
+		"name" : "glad-populate"
+	}
+}
